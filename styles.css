@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.body{
+    background-color: #f0f0f0;
+}
+
+.body .dark-button{
+    display: block;
+}
+
+.body .light-button{
+    display: none;
+}
+
+.body.dark{
+    background-color: #0f0f0f;
+}
+
+.body.dark .dark-button{
+    display: none;
+}
+
+.body.dark .light-button{
+    display: block;
+}
+
+.body .navbar{
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #ffd900;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    display: flex;
+}
+
+.body .navbar .kid-logo{
+    width: 250px;
+    position: absolute;
+    transform: translateX(5px) translateY(-25px);
+}
+
+.body .navbar .nav-mid{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body .navbar .searchbar{
+    position: relative;
+    transform: translateX(-10px);
+}
+
+.body .navbar .searchbar .searchbutton{
+    height: 25px;
+    position: absolute;
+    transform:  translateX(-10px) translateY(2px);
+}
+
+@media screen and (max-width: 760px){
+    .body .navbar{
+        height: 50px;
+    }
+
+    .body .navbar .kid-logo{
+        width: 200px;
+        transform: translateY(-20px);
+    }
+
+    .body .navbar .searchbar{
+        transform: translateX(-15px);  
+    }
+
+    .body .navbar .searchbar .searchbutton{
+        transform: translateX(-15px) translateY(2px);
+        height: 24px;
+    }
+}
+
+.body .tutoriais .tutorialselect{
+    border: 1px solid #000;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+}
+
+.body.dark .tutoriais .tutorialselect{
+    color: #fff;
+    border-color: #fff;
+}
+
+.body .tutoriais a{
+    text-decoration: none;
+}
+
+.body .contents{
+    color: #000;
+}
+
+.body.dark .contents{
+    color: #fff;
+}

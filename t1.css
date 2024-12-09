@@ -1,0 +1,9 @@
+
+.contents img{
+    width: 80%;
+}
+
+.contents code{
+    background-color: #aaa;
+    padding: 5px;
+}
